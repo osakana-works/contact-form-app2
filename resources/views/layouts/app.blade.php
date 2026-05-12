@@ -11,14 +11,14 @@
     @yield('styles')
 </head>
 <body>
-    <header>
-        <h1>ヘッダー</h1>
+    <header class="header">
+        <h1 class="header__logo">ヘッダー</h1>
     </header>
     <main>
         @yield('content')
     </main>
-    <footer>
-        <p>&copy; 2026 My Application</p>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2026 My Application</p>
     </footer>
 </body>
 </html>
