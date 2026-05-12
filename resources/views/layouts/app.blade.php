@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header__logo">ヘッダー</h1>
+        <a class="header__logo" href="/">contact form</a>
     </header>
     <main>
         @yield('content')
