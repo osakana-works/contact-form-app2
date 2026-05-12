@@ -46,22 +46,28 @@ DB_USERNAME=sail
 DB_PASSWORD=password
 ```
 
-### 4. Sail を起動
+### 4. Sail をインストール
+```bash
+composer require laravel/sail --dev
+php artisan sail:install --with=mysql
+```
+
+### 5. Sail を起動
 ```bash
 ./vendor/bin/sail up -d
 ```
 
-### 5. アプリキー生成
+### 6. アプリキー生成
 ```bash
 ./vendor/bin/sail artisan key:generate
 ```
 
-### 6. マイグレーション
+### 7. マイグレーション
 ```bash
 ./vendor/bin/sail artisan migrate
 ```
 
-### 7. ブラウザでアクセス
+### 8. ブラウザでアクセス
 ```
 http://localhost
 ```
